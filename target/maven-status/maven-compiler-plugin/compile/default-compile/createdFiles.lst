@@ -1,0 +1,6 @@
+con/maven/DAO/myConection.class
+con/maven/mavenClass/Director.class
+con/maven/mavenEntity/DirectorEntity.class
+con/maven/DAO/NewHibernateUtil.class
+con/mymaven/mavenapi/ApiDirector.class
+con/maven/DAO/DaoDirectory.class

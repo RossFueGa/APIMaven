@@ -6,19 +6,26 @@
 <hibernate-configuration>
     <session-factory>
         <!-- SQL Dialect -->
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
  
         <!-- Database Connection Settings -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgres://localhost:5432/db_prueba</property>
-        <property name="hibernate.connection.username">postgres</property>
-        <property name="hibernate.connection.password">panda</property>
+        <property name="hibernate.connection.username">ross</property>
+        <property name="hibernate.connection.password">pandas</property>
+        <property name="current_session_context_class">thread</property>
+        <!-- Disable the second-level cache -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
         <property name="show_sql">true</property>
  
         <!-- Specifying Session Context -->
         <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
  
         <!-- Mapping With Model Class Containing Annotations -->
-        <mapping class="con.maven.DAO.DaoDirectory" />
+        <mapping class="con.maven.mavenEntity.DirectorEntity" />
     </session-factory>
 </hibernate-configuration>
+
+
+
+
